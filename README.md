@@ -18,11 +18,14 @@ This script performs modification score calculation to quantify the PT modificat
 
 **Input:**<br>
 `--input` or `-i`: bam file <br>
+
 `--genome` or `-g`: genome of reference (.fasta or .fa) used for PT modification mapping. Multi-FASTA format is allowed. <br>
 
 **Arguments:** <br>
 `--read_cutoff` or `-r`: int, minimum read number for a base to be considered as modified in PT site calling (default=50 if no value is provided) <br>
+
 `--score_cutoff` or `-s`: float, minimum modification score value for a base to be considered as modified in PT site calling (default=0 if no value is provided) <br> 
+
 `--window` or `-w`: int, length of window for calculate modification score, i.e. `-w 50` means the modification score is calculated within +/- 50bp of a base position (default=50 if no value is provided) <br>
 
 **Optional argument:** <br>
